@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 15 August </title>
+
+    <script src="https://unpkg.com/element-behaviors@3.1.0/dist/global.js"></script>
+
+    <h1 has="sparkles">
+        Coming Soon!
+    </h1>
+    <h1 has="sparkles">
+        15 August !
+    </h1>
+
+    <table>
+
+        <tr><td has="sparkles"> Independence day </td></tr>
+    </table>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background: #100e0e;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {color: deeppink;}
+        table {color: yellow; margin-top: 130px;}
+
+        .rotation {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .sparkle {
+            border-radius: 100%;
+            background: #230aa1;
+            animation-name: sparkles;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .sparkle1 {animation-duration: 0.5s}
+        .sparkle2 {animation-duration: 0.8s}
+        .sparkle3 {animation-duration: 1s}
+        .sparkle4 {animation-duration: 1.4s}
+        .sparkle5 {animation-duration: 1.8s}
+        .sparkle6 {animation-duration: 2s}
+
+        @keyframes sparkles {
+            0% {
+                transform: translateX(0px);
+                width: 8px;
+                height: 8px;
+            }
+            100% {
+                transform: translateX(150px);
+                width: 0px;
+                height: 0px;
+            }
+        }
+    </style>
+
+    <script>
+        // whenDefined() is new:
+        elementBehaviors.whenDefined('sparkles').then(() => {
+            console.log('Sparkles are ready!')
+        })
+
+        setTimeout(() => {
+            class Sparkles {
+
+
+                rotations = []
+
+                connectedCallback(el) {
+
+                    const box = el.getBoundingClientRect()
+                    const centerX = box.x + box.width / 2
+                    const centerY = box.y + box.height / 2
+
+                    for (const i of Array(50).map((n, i) => i)) {
+                        const rotation = document.createElement('div')
+                        this.rotations.push(rotation)
+                        rotation.classList.add('rotation')
+                        rotation.style.transform = `translate3d(${centerX}px, ${centerY}px, 0) rotateZ(${Math.random() * 360}deg)`
+                        document.body.append(rotation)
+
+                        const spark = document.createElement('div')
+                        spark.classList.add('sparkle')
+                        spark.classList.add('sparkle' + (Math.round((Math.random() * (6-1))) + 1))
+                        rotation.append(spark)
+                    }
+
+                    window.addEventListener('resize', () => {
+                        const box = el.getBoundingClientRect()
+                        const centerX = box.x + box.width / 2
+                        const centerY = box.y + box.height / 2
+                        for (const rotation of this.rotations)
+                            rotation.style.transform = `translate3d(${centerX}px, ${centerY}px, 0) rotateZ(${Math.random() * 360}deg)`
+                    })
+                }
+            }
+
+            elementBehaviors.define('sparkles', Sparkles)
+        }, 10)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

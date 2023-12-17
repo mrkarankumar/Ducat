@@ -1,0 +1,58 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+
+}
+
+.box1{ 
+
+width: 200px;
+height: 200px;
+background-color: red;
+
+padding-left: 86px;
+padding-top: 68px;
+ border: solid black;  
+/* margin: 40px auto; */
+
+}
+
+.box2 {
+    width: 200px;
+    height: 198px;
+    color: #ca0606;
+    padding-top: 20px;
+    background-image: url(images/raju.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+
+    /* background-color: chocolate; */
+     position: relative; 
+     left: 220px; 
+     bottom: 200px;
+      /* top: 200px;  */
+    /* margin-left: 225px; */
+    /* margin-top: -197px; */
+    
+}
+.box2:hover{
+
+    color: blue;
+    background-image: url(images/raju.jpg);
+}
+.box3 {
+
+width: 200px;
+height: 200px;
+background-color: #06ca82;
+
+
+
+}
+
+
+
+
+

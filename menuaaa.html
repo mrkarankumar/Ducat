@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /* background-color:white ; */
+    }
+    .menu2{
+        position: absolute;
+        margin: 22px;
+        padding: 22px;
+        background-color: blue;
+    }
+    .menu2 ul li{
+        position: relative;
+        margin-left: 20px;
+        list-style: none;
+        padding: 8px;
+        float: left;
+    }
+    .menu2 ul li:hover{
+        background-color: brown;
+    }
+    .menu2 ul li ul{
+        display: none;
+        position: absolute;
+    }
+    .menu2 ul li:hover ul{
+        display: block;
+    }
+    .menu2 ul li ul li {
+        float: none;
+        margin-left: -10px;
+        margin-top: 25px;
+    }
+    .menu2 ul li ul li:hover{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div class="menu2">
+        <ul>
+            <li>aaaaaaaa
+                <ul>
+                    <li>bbbbbb</li>
+                    <li>bbbbbb</li>
+                    <li>bbbbbb</li>
+                    <li>bbbbbb</li>
+                </ul>
+            </li>
+            <li>aaaaaaaa
+                <ul>
+                    <li>ccccccc</li>
+                    <li>ccccccc</li>
+                    <li>ccccccc</li>
+                    <li>ccccccc</li>
+                </ul>
+            </li>
+            <li>aaaaaaaa</li>
+            <li>aaaaaaaa</li>
+            <li>aaaaaaaa</li>
+            <li>aaaaaaaa</li>
+        </ul>
+
+    </div>
+</body>
+</html>

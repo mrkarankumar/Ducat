@@ -1,0 +1,19 @@
+
+#w3-logo {
+    position: relative;
+    z-index: 1;
+    color: #04aa52;
+    font-size: 36px !important;
+}
+.fa fa-logo ws-hover-text-green{
+    display: inline-block;
+    font: normal normal normal 14px/1 fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}

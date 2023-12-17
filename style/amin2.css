@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(90deg,rgb(230, 71, 14),rgb(40, 182, 238));
+}
+.input1{
+    display: block;
+    width: 260px;
+    height: 380px;
+    background-color: black;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    margin-top: 80px;
+    margin-left: 100px;
+    float: left;
+}
+/* .input2{
+    display: block;
+    width: 126px;
+    height: 180px;
+    background-color: red;
+    border-radius: 50% 50% 50% 50% /60% 60% 40% 40%;
+    margin-left: 70px;
+    margin-top: 50px;
+    border: 2px solid green;
+} */
+.input2{
+    background-color: orangered;
+    height: 150px;
+    width: 150px;
+    border-radius: 300px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.input3{
+    color: white;
+    margin-left: 70px;
+}
+.input4{
+    color: white;
+    margin-left: 45px;
+}

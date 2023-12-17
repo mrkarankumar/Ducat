@@ -1,0 +1,131 @@
+* {
+    padding: o;
+
+    margin: 0;
+}
+
+
+
+.karan-rohit {
+
+    width: 100%;
+    height: 200px;
+    /* border: 2px black solid; */
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+    /* background-image: url(tara.jpg); */
+}
+
+.sun {
+    width: 120px;
+    height: 120px;
+    background: #ff3700;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    opacity:0.8 ;
+    animation:sun 5s ease-out ;
+}
+
+.earth {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    opacity: 0.8;
+    animation: earth 4s linear;
+
+}
+
+.earth1 {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    opacity: 0.8;
+    animation: earth1 2.5s ease-in;
+    animation-delay: 3.1s;
+}
+
+.earth2 {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: 40px;
+    right: -10px;
+
+
+    opacity: 0.8;
+    animation: earth2 3s ease-out;
+}
+
+@keyframes earth1 {
+    form {
+
+        top: 20px;
+        left: -10px;
+
+
+    }
+
+    to {
+
+        top: 20px;
+        left: 120%;
+
+    }
+}
+
+@keyframes earth {
+    form {
+
+        top: 20px;
+        left: 500px;
+
+
+    }
+
+    to {
+
+        top: 30px;
+        left: 110%;
+
+    }
+}
+
+@keyframes earth2 {
+    form {
+
+        top: 50px;
+        left: -10px;
+
+
+    }
+
+    to {
+
+        top: 30px;
+        right: 110%;
+
+    }
+}
+@keyframes earth {
+    form {
+
+        top: 20px;
+        left: 400px;
+
+
+    }
+
+    to {
+
+        top: 30px;
+        left: 115%;
+
+    }
+}

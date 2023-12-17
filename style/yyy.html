@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootStrap MenuBar</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      //tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+      //popover
+      $('[data-toggle="popover"]').popover();
+      $(".btnload").click(function () {
+        $(this).button('loading');
+      });
+      $(".btnreset").click(function () {
+        $(this).button("loading").delay(500).queue(function () {
+          $(this).button("reset");
+          $(this).dequeue();
+        });
+      });
+      $(".btncustom").click(function () {
+        $(this).button('loading').delay(1000).queue(function () {
+          $(this).button('somestringvalue');
+          $(this).dequeue();
+        });
+      });
+    });
+  </script>
+
+</head>
+<b>
+
+<body style="margin-bottom:200px;">
+    
+
+    
+<div class="container">
+
+    <h2>karan</h2>
+
+    <div class="alert alert-success">
+
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+
+      </div>
+
+
+      <div class="alert alert-info">
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">&times;</a>
+      </div>
+
+</div>
+
+</body>
+
+</html>
