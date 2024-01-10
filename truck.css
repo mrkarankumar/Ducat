@@ -1,0 +1,144 @@
+body{
+    background:linear-gradient(blue,rgb(63, 63, 235),rgb(236, 213, 171));
+    display: grid;
+    place-items: center;
+ }
+ .rectangle{
+     height: 50px;
+     width: 500px;
+     background-color: yellow;
+     margin-left: -1000px;
+     border-radius: 30px;
+     margin-top: -300px;
+     position: absolute;
+ }
+ .setting{
+     position: relative;
+     position: fixed;
+     height: 40px;
+     width: 40px;
+     margin-top: 5px;
+     margin-left: 5px;
+     animation: ani 0.10s linear infinite;
+ }
+ @keyframes ani{
+    0%{
+     transform: rotate(0deg);
+    }
+    100%{
+     transform: rotate(360deg);
+    }
+ }
+ .setting1{
+     position: relative;
+     position: fixed;
+     height: 40px;
+     width: 40px;
+     margin-top: 5px;
+     margin-left: 455px;
+     animation: ani 0.10s linear infinite;
+ }
+ .rectangle1{
+     height: 50px;
+     width: 500px;
+     background-color: yellow;
+     margin-left: 400px;
+     border-radius: 30px;
+     margin-top: 250px;
+     position: absolute;
+ }
+ .setting2{
+     position: relative;
+     position: fixed;
+     height: 40px;
+     width: 40px;
+     margin-top: 5px;
+     margin-left: 5px;
+     animation: karan 0.10s linear infinite;
+ }
+ @keyframes karan{
+     0%{
+         transform: rotate(-0deg);
+        }
+        100%{
+         transform: rotate(-360deg);
+        }
+ }
+ .setting3{
+     position: relative;
+     position: fixed;
+     height: 40px;
+     width: 40px;
+     margin-top: 5px;
+     margin-left: 455px;
+     animation: karan 0.10s linear infinite;
+ }
+ .cubebox{
+     position: absolute;
+     /* position: fixed; */
+     height: 120px;
+     width: 120px;
+     margin-top:-550px;
+     margin-left: -400px; 
+     animation: animate 4.6s linear infinite;
+     /* animation-delay:2s; */
+ }
+ @keyframes animate{
+      0%{
+        top: 200px;
+        left: 0px;
+      }
+      20%{
+         transform: rotate(180deg);
+         left: 510px;
+         top: 200px;
+ 
+      }
+      40%{
+         transform: rotate(180deg);
+         left: 510px;
+         top: 430px;
+      }
+      80%{
+         top: 430px;
+         left: 150px;
+      }
+      98%{
+         top: 600px;
+         left: 150px;
+      }
+      100%{
+         /* opacity: 0; */
+         top: 600px;
+         left: 150px;
+         transition-delay: 2s;
+      }
+ }
+ .div{
+     position: relative;
+     height: 300px;
+     width: 300px;
+     /* background-color: aqua; */
+     margin-left: -550px;
+     animation: animateee 4.8s linear infinite;
+ 
+ }
+ @keyframes animateee{
+     90%{
+         animation-delay: 3s;
+         top: 0px;
+         left: 200px;
+     }
+     100%{
+         top: 0;
+         left: 1300px;
+     }
+ }
+ .truck{
+     position: relative;
+     height: 250px;
+     width: 300px;
+     margin-top: 50px;
+ 
+ }
+ 
