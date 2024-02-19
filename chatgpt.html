@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb Control</title>
+  <style>
+    #bulb {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="bulb"></div>
+<button onclick="toggleBulb()">Toggle Bulb</button>
+
+<script>
+  let isBulbOn = false;
+
+  function toggleBulb() {
+    const bulb = document.getElementById('bulb');
+
+    if (isBulbOn) {
+      // Turn off the bulb
+      bulb.style.backgroundColor = '#ccc';
+    } else {
+      // Turn on the bulb
+      bulb.style.backgroundColor = 'yellow';
+    }
+
+    // Toggle the state
+    isBulbOn = !isBulbOn;
+  }
+</script>
+
+</body>
+</html>
